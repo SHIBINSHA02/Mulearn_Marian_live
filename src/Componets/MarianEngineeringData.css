@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.table-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mce-card {
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mce-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+.table-header {
+  font-weight: 600;
+  color: #1e40af;
+  cursor: pointer;
+  padding: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.table-header:hover {
+  background-color: #e0e7ff;
+}
+
+.sort-icon {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.table-row {
+  transition: background-color 0.2s ease;
+}
+
+.table-row:hover {
+  background-color: #f1f5f9;
+}
+
+.highlight-row {
+  background-color: #e0f2fe;
+  font-weight: 500;
+}
+
+.table-row td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.bg-blue-50 {
+  background-color: #eff6ff;
+}
+
+.text-gray-800 {
+  color: #1f2937;
+}
+
+.text-gray-900 {
+  color: #111827;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .table-container {
+    padding: 0 0.5rem;
+  }
+
+  .mce-card {
+    padding: 1rem;
+  }
+
+  .table-header, .table-row td {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .mce-card h4 {
+    font-size: 1.25rem;
+  }
+
+  .mce-card h6 {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .table-header, .table-row td {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+
+  .mce-card {
+    padding: 0.75rem;
+  }
+}
